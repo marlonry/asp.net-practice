@@ -23,24 +23,38 @@
         <div class="block-1 top-5">
           <div class="block-1-shadow">
             <h2 class="clr-6">Contact Form</h2>
-            <form id="form" method="post" action="#">
+            <form id="form" runat="server">
               <fieldset>
-                <label><strong>Name:</strong>
-                  <input type="text" value="">
-                  <strong class="clear"></strong></label>
-                <label><strong>Email:</strong>
-                  <input type="text" value="">
-                  <strong class="clear"></strong></label>
-                <label><strong>Phone:</strong>
-                  <input type="text" value="">
-                  <strong class="clear"></strong></label>
-                <label><strong>Message:</strong>
-                  <textarea></textarea>
-                  <strong class="clear"></strong></label>
-                <strong class="clear"></strong>
-                <div class="btns pad-2"><a href="#" class="link-2">Clear</a><a href="#" class="link-2">Send</a></div>
+                  <asp:Label ID="lblStatus" runat="server" Text="Label"></asp:Label>
+                  <div class="section" style="">
+                    <asp:Label ID="lblName" runat="server" Text="Name">
+                        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                    </asp:Label>
+                  </div>
+
+                  <div class="section">
+                      <asp:Label ID="lblPhone" runat="server" Text="Phone">
+                          <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+                      </asp:Label>
+                  </div>
+
+                  <div class="section">
+                  <asp:Label ID="lblEmail" runat="server" Text="Email">
+                      <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                  </asp:Label>
+                    </div>
+
+                  <div class="section">
+                    <asp:Label ID="lblMessage" runat="server" Text="Message">
+                        <asp:TextBox ID="txtMessage" runat="server"></asp:TextBox>
+                    </asp:Label>
+                  </div>
+
+                  <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+                  
               </fieldset>
             </form>
           </div>
         </div>
+    </div>
 </asp:Content>

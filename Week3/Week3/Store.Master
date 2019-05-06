@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.Master.cs" Inherits="Week3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <%--Header--%>
+    <header>
+        Header
+    </header>
+
+    <%--Content--%>
+    <asp:ContentPlaceHolder ID="Registration" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%--Footer--%>
+    <footer>
+        Footer
+    </footer>
+    <script  src="js/index.js"></script>
+    </body>
+</html>
