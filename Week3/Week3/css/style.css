@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+
+}
+
 body {
   font-family: "Roboto";
-  font-size: 14px;
+  font-size: 1.6rem;
   background-size: 200% 100% !important;
   -webkit-animation: move 10s ease infinite;
           animation: move 10s ease infinite;
@@ -15,10 +20,14 @@ body {
   background: linear-gradient(45deg, #49D49D 10%, #A2C7E5 90%);
   height: 100vh;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 
 .user {
   width: 90%;
-  max-width: 340px;
+  max-width: 34rem;
   margin: 10vh auto;
 }
 
@@ -161,4 +170,36 @@ body {
   100% {
     background-position: 0 0;
   }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: royalblue;
+    padding: 20px 30px;
+    margin: auto;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header__links-container {
+    display: flex;
+}
+
+.header__links-container a {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.header__links-container a:last-child {
+    margin-right: 0;
+}
+
+.header__links-container a:hover {
+    background-color: #a09486;
 }

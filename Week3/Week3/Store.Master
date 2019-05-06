@@ -11,8 +11,16 @@
 </head>
 <body>
     <%--Header--%>
-    <header>
-        Header
+    <header class="header">
+        <div class="header__logo-container">
+            <h1>Logo</h1>
+        </div>
+        <div class="header__links-container">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
     </header>
 
     <%--Content--%>
@@ -21,7 +29,7 @@
 
     <%--Footer--%>
     <footer>
-        Footer
+        
     </footer>
     <script  src="js/index.js"></script>
     </body>
