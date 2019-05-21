@@ -122,6 +122,7 @@
     <Content Include="about.aspx" />
     <Content Include="schedule.aspx" />
     <Content Include="gallery.aspx" />
+    <Content Include="UpdateSchedule.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,6 +167,13 @@
     </Compile>
     <Compile Include="gallery.aspx.designer.cs">
       <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.designer.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

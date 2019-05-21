@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Week_5___Login.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 40rem;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .input {
+            width: 100%;
+            max-width: 100%;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            border: 2px solid deepskyblue;
+            border-radius: 20rem;
+            transition: all .3s;
+        }
+        .input:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .input:focus {
+            outline:none;
+            border: 2px solid royalblue;
+        }
+
+        .button {
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            background-color: deepskyblue;
+            border-radius: 20rem;
+            transition: all .3s;
+            cursor: pointer;
+        }
+
+        .button:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .button:hover {
+            background-color: royalblue;
+        }
+
+        .button:focus {
+            outline: none;
+        }
+
+        .label {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 1.6rem;
+            color: lawngreen;
+        }
+
+        h2 {
+            width: 100%;
+        }
+
+        .panel {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

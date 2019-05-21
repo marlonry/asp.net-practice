@@ -16,6 +16,7 @@
             <h1>Logo</h1>
         </div>
         <div class="header__links-container">
+            <h1>Ugly Header</h1>
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -28,8 +29,8 @@
     </asp:ContentPlaceHolder>
 
     <%--Footer--%>
-    <footer>
-        
+    <footer class="footer">
+        Ugly footer
     </footer>
     <script  src="js/index.js"></script>
     </body>

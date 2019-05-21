@@ -14,60 +14,66 @@
         <p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum <br>
           dolor sit amet <a href="#" class="link">More...</a></p>
       </div>
+    <form runat="server">
       <div class="grid_8">
         <div class="block-1 top-5">
           <div class="block-1-shadow">
-            <h2 class="clr-6 p6">Schedule</h2>
-            <table class="table">
-              <tr>
-                <th>Monday</th>
-                <th>Wednesday</th>
-                <th>Friday</th>
-                <th class="last">Saturday</th>
-              </tr>
-              <tr>
-                <td><span>11:00</span><span class="clr-4">Nam liber tempor</span><span>Peter Stanton</span></td>
-                <td><span>11:00</span><span class="clr-4">Nam liber tempor</span><span>Peter Stanton</span></td>
-                <td><span>11:00</span><span class="clr-4">Nam liber tempor</span><span>Peter Stanton</span></td>
-                <td><span>11:00</span><span class="clr-4">Nam liber tempor</span><span>Peter Stanton</span></td>
-              </tr>
-              <tr>
-                <td><span>13:00</span><span class="clr-4">Lorem ipsum</span><span>Helen Perton</span></td>
-                <td><span>13:00</span><span class="clr-4">Lorem ipsum</span><span>Helen Perton</span></td>
-                <td><span>13:00</span><span class="clr-4">Lorem ipsum</span><span>Helen Perton</span></td>
-                <td><span>13:00</span><span class="clr-4">Lorem ipsum</span><span>Helen Perton</span></td>
-              </tr>
-              <tr>
-                <td><span>16:00</span><span class="clr-4">Dolor sit amet</span><span>Jesica Murray</span></td>
-                <td><span>16:00</span><span class="clr-4">Dolor sit amet</span><span>Jesica Murray</span></td>
-                <td><span>16:00</span><span class="clr-4">Dolor sit amet</span><span>Jesica Murray</span></td>
-                <td><span>16:00</span><span class="clr-4">Dolor sit amet</span><span>Jesica Murray</span></td>
-              </tr>
-            </table>
-            <h2 class="clr-6 p6">Events Schedule</h2>
-            <div class="wrap">
-              <div class="box-2">
-                <div class="p4">
-                  <p><strong>April 10, 2012</strong></p>
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore <a href="#" class="link">More...</a></p>
-                </div>
-                <div>
-                  <p><strong>March 22, 2012</strong></p>
-                  <p>Teugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum <a href="#" class="link">More...</a></p>
-                </div>
-              </div>
-              <div class="box-2 last">
-                <div class="p4">
-                  <p><strong>April 04, 2012</strong></p>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore <a href="#" class="link">More...</a></p>
-                </div>
-                <div>
-                  <p><strong>March 14, 2012</strong></p>
-                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus <a href="#" class="link">More...</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="pad-2"> <a href="#" class="link-2">More Events</a> </div>
+              
+              <asp:DataList ID="DataList1" runat="server" CellPadding="4" ForeColor="Black" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" GridLines="Vertical">
+                    <AlternatingItemStyle BackColor="White" />
+                    <FooterStyle BackColor="#CCCC99" />
+                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                    <HeaderTemplate>
+                        <table>
+                            <thead>
+                            <tr>
+                            <td>Day &nbsp;</td>
+                                              
+                            <td>Time &nbsp;</td>
+                       
+                            <td>Class &nbsp;</td>
+                       
+                            <td>Schedule &nbsp;</td>
+                        </tr>
+                                </thead>
+                        
+                    </HeaderTemplate>
+                    <ItemStyle BackColor="#F7F7DE" />
+                  <ItemTemplate>
+                      <tbody>
+                      <tr>
+                            <td>
+                                <%#Eval("day") %> &nbsp;
+                            </td>
+                       
+                            <td>
+                                 <%#Eval("time") %> &nbsp;
+                            </td>
+                        
+                            <td>
+                                 <%#Eval("topic") %> &nbsp;
+                            </td>
+                        
+                            <td>
+                                 <%#Eval("tutor") %> &nbsp;
+                            </td>
+                          <td>
+                              <asp:LinkButton ID="LinkButton1" runat="server" Onclick="LinkButton1_Click" CommandArgument='<%#Eval("id") %>' >Select</asp:LinkButton>
+                          </td>
+                        </tr>
+                    </tbody>
+                          
+                      </ItemTemplate>
+
+                   <FooterTemplate>
+                       </table>
+                   </FooterTemplate>
+                    <SelectedItemStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+
+                   
+              </asp:DataList>
           </div>
         </div>
+      </div>
+    </form>
 </asp:Content>
