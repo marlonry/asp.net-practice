@@ -25,7 +25,7 @@ namespace Week_5___Login
             // event
             conn = new SqlConnection(connStr);
             conn.Open();
-            string query = "insert into Register  values (@username, @password, @email)";
+            string query = "insert into Register values (@username, @password, @email)";
             cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@username", signupUsername.Text);
             cmd.Parameters.AddWithValue("@password", signupPassword.Text);
@@ -33,11 +33,17 @@ namespace Week_5___Login
 
             try
             {
-                if (cmd.ExecuteNonQuery() == 1)
+                if(signupUsername.Text != "" && signupPassword.Text != "" && signupEmail.Text != "")
                 {
-                    labelResult.Text = "Your account has been succesfully created, Login and start your journey!!!";
+                    if (cmd.ExecuteNonQuery() == 1)
+                    {
+                        labelResult.Text = "Your account has been succesfully created, Login and start your journey!!!";
+                    }
+                    conn.Close();
+                } else
+                {
+                    labelResult.Text = "All fields are mandatory";
                 }
-                conn.Close();
             }
 
             catch (Exception err)

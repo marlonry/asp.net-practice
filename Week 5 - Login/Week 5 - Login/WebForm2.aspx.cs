@@ -67,6 +67,7 @@ namespace Week_5___Login
             if(reader.Read())
             {
                 updateUsername.Text = reader["username"].ToString();
+
                 updatePassword.Text = reader["password"].ToString();
                 updateEmail.Text = reader["email"].ToString();
             }

@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="Exam.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/main.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        html {
+            background-color:#6CC091;
+        }
+
+        .inner.small {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        form {
+            margin: 0 !important;
+        }
+
+        .section {
+            background-color: #6CC091;
+            padding: 2rem 0;
+            color: white;
+            text-align: center;
+        }
+
+        ul:last-child {
+            margin-bottom: 0 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="index.html" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+                    <nav id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="generic.html">Generic</a>
+                        <a href="elements.html">Elements</a>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </nav>
+                    <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+                </div>
+            </header>
+
+            <!-- Banner -->
+            <section id="banner">
+                <div class="inner">
+                    <header>
+                        <h1>Welcome to Projection</h1>
+                    </header>
+
+                    <div class="flex ">
+
+                        <div>
+                            <span class="icon fa-car"></span>
+                            <h3>Aliquam</h3>
+                            <p>Suspendisse amet ullamco</p>
+                        </div>
+
+                        <div>
+                            <span class="icon fa-camera"></span>
+                            <h3>Elementum</h3>
+                            <p>Class aptent taciti ad litora</p>
+                        </div>
+
+                        <div>
+                            <span class="icon fa-bug"></span>
+                            <h3>Ultrices</h3>
+                            <p>Nulla vitae mauris non felis</p>
+                        </div>
+
+                    </div>
+
+                    <footer>
+                        <a href="#" class="button">Get Started</a>
+                    </footer>
+                </div>
+            </section>
+
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <!-- Three -->
+            <section id="three" class="wrapper align-center">
+                <div class="inner">
+                    <div class="flex flex-2">
+                        <article>
+                            <div class="image round">
+                                <img src="images/pic01.jpg" alt="Pic 01" />
+                            </div>
+                            <header>
+                                <h3>Lorem ipsum<br />
+                                    dolor amet nullam</h3>
+                            </header>
+                            <p>Morbi in sem quis dui placerat ornare. Pellentesquenisi<br />
+                                euismod in, pharetra a, ultricies in diam sed arcu. Cras<br />
+                                consequat  egestas augue vulputate.</p>
+                            <footer>
+                                <a href="#" class="button">Learn More</a>
+                            </footer>
+                        </article>
+                        <article>
+                            <div class="image round">
+                                <img src="images/pic02.jpg" alt="Pic 02" />
+                            </div>
+                            <header>
+                                <h3>Sed feugiat<br />
+                                    tempus adipicsing</h3>
+                            </header>
+                            <p>Pellentesque fermentum dolor. Aliquam quam lectus<br />
+                                facilisis auctor, ultrices ut, elementum vulputate, nunc<br />
+                                blandit ellenste egestagus commodo.</p>
+                            <footer>
+                                <a href="#" class="button">Learn More</a>
+                            </footer>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="section">
+                <div class="copyright">
+                    &copy; Untitled. Design: TEMPLATED. Images: Unsplash.
+                </div>
+            </footer>
+            
+
+            <!-- Scripts -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/skel.min.js"></script>
+            <script src="js/util.js"></script>
+            <script src="js/main.js"></script>
+
+        </div>
+    </form>
+</body>
+</html>
