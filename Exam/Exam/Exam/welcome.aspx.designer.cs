@@ -13,22 +13,13 @@ namespace Exam {
     public partial class welcome {
         
         /// <summary>
-        /// labelResult control.
+        /// button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelResult;
-        
-        /// <summary>
-        /// buttonLogout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonLogout;
+        protected global::System.Web.UI.WebControls.Button button1;
         
         /// <summary>
         /// buttonDeleteAccount control.
@@ -38,5 +29,23 @@ namespace Exam {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button buttonDeleteAccount;
+        
+        /// <summary>
+        /// buttonUpdateDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonUpdateDetails;
+        
+        /// <summary>
+        /// labelResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelResult;
     }
 }

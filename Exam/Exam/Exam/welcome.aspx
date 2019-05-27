@@ -3,16 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="section">
-        <ul class="actions">
-            <li>
-                <asp:label id="labelResult" text="Welcome" runat="server" />
-            </li>
-        </ul>
+        <div class="inner small">
+                <asp:Button ID="button1" CssClass="alt" Text="Log out" runat="server" OnClick="buttonLogout_Click" /> &nbsp;
+                <asp:Button ID="buttonDeleteAccount" CssClass="alt" Text="Delete Account" runat="server" OnClick="buttonDeleteAccount_Click" /> &nbsp;
+                <asp:Button ID="buttonUpdateDetails" CssClass="alt" runat="server" Text="Update Details" OnClick="buttonUpdateDetails_Click" /> <br />
+            <br />
+            
+            <asp:label id="labelResult" text="" runat="server" />
+        </div>
     </div>
     
-</asp:Content>
-
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Button ID="buttonLogout" Text="Log out" runat="server" OnClick="buttonLogout_Click" />
-    <asp:Button ID="buttonDeleteAccount" Text="Delete Account" runat="server" OnClick="buttonDeleteAccount_Click" />
 </asp:Content>

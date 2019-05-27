@@ -29,11 +29,18 @@
             background-color: #6CC091;
             padding: 2rem 0;
             color: white;
-            text-align: center;
+        }
+
+        .section h3 {
+            color: white;
         }
 
         ul:last-child {
             margin-bottom: 0 !important;
+        }
+
+        label {
+            color: white;
         }
 
     </style>

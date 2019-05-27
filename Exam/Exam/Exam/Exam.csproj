@@ -79,6 +79,7 @@
     <Content Include="js\skel.min.js" />
     <Content Include="js\util.js" />
     <Content Include="login.aspx" />
+    <Content Include="update.aspx" />
     <Content Include="Web.config" />
     <Content Include="welcome.aspx" />
   </ItemGroup>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
     </Compile>
     <Compile Include="welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>

@@ -23,6 +23,17 @@ namespace Exam
             {
                 Response.Redirect("login.aspx");
             }
+
+
+            if(!IsPostBack)
+            {
+                string message = Request.QueryString["msg"];
+
+                if(message == "confirmed_update")
+                {
+                    labelResult.Text = "Your details have been updated successfully";
+                }
+            }
         }
 
         protected void buttonLogout_Click(object sender, EventArgs e)
@@ -47,6 +58,14 @@ namespace Exam
             }
 
             conn.Close();
+        }
+
+        protected void buttonUpdateDetails_Click(object sender, EventArgs e)
+        {
+            Session["username"] = Session["username"];
+            Session["password"] = Session["password"];
+
+            Response.Redirect("update.aspx");
         }
     }
 }

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <footer id="footer">
+    <div class="section">
         <div class="inner small">
             <h3>Log In</h3>
 
@@ -33,6 +33,6 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </div>
     
 </asp:Content>
